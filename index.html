@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srabon's Game World | Professional Gaming Hub</title>
+    <style>
+        /* CSS দিয়ে ডিজাইন */
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #2c2c2c; /* Gray Background */
+            color: #eeeeee; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6; 
+        }
+        
+        header { 
+            background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%); 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #38bdf8; 
+        }
+        
+        .profile-img { 
+            width: 160px; 
+            height: 160px; 
+            border-radius: 50%; 
+            border: 4px solid #38bdf8; 
+            margin-bottom: 15px; 
+            object-fit: cover; 
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.5); 
+        }
+        
+        h1 { font-size: 3rem; margin: 10px 0; letter-spacing: 2px; color: #38bdf8; text-transform: uppercase; }
+        .subtitle { color: #cbd5e1; font-size: 1.2rem; font-weight: 300; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .section-title { 
+            border-left: 6px solid #38bdf8; 
+            padding-left: 15px; 
+            margin: 50px 0 30px 0; 
+            font-size: 2rem; 
+            color: #38bdf8; 
+            text-transform: uppercase; 
+        }
+
+        .game-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+        }
+        
+        .game-card { 
+            background: #3d3d3d; 
+            border-radius: 15px; 
+            padding: 30px; 
+            transition: all 0.4s ease; 
+            border: 1px solid #4a4a4a; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .game-card:hover { 
+            transform: translateY(-10px); 
+            border-color: #38bdf8; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        /* গেম প্রোফাইল পিকচার স্টাইল */
+        .game-thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 2px solid #38bdf8;
+        }
+
+        .game-card h3 { color: #38bdf8; margin: 10px 0; font-size: 1.6rem; }
+        .status-badge { 
+            background: #38bdf8; 
+            color: #0b0e14; 
+            padding: 4px 12px; 
+            border-radius: 6px; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+        }
+
+        .feature-list {
+            text-align: left;
+            margin: 15px 0;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .about-box { 
+            background: #333333; 
+            border-radius: 20px; 
+            padding: 50px; 
+            border: 1px solid #38bdf8; 
+            margin-top: 80px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0b0e14;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 60px; 
+            background: #1f2937;
+            color: #94a3b8; 
+            border-top: 4px solid #38bdf8;
+            margin-top: 100px;
+        }
+        .owner-mention { color: #38bdf8; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="Mominul Hasan Srabon" class="profile-img">
+        <h1>SRABON's GAME WORLD</h1>
+        <p class="subtitle">Gamer | Founder of PLAYX NOBITA | Content Creator</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">🎮 Premium Game Library</h2>
+        <div class="game-grid">
+            
+            <div class="game-card">
+                <img src="https://img.icons8.com/color/144/valorant.png" alt="Valorant" class="game-thumb">
+                <span class="status-badge">Competitive FPS</span>
+                <h3>Valorant</h3>
+                <p>একটি কৌশলগত 5v5 ক্যারেক্টার-বেজড শ্যুটার গেম।</p>
+                <ul class="feature-list">
+                    <li>Tactical Ability Guides</li>
+                    <li>Agent Mastery Tips</li>
+                </ul>
+                <a href="#" class="cta-button">View Details →</a>
+            </div>
+
+            <div class="game-card">
+                <img src="https://img.icons8.com/color/144/clash-of-clans.png" alt="COC" class="game-thumb">
+                <span class="status-badge">Strategy</span>
+                <h3>Clash of Clans</h3>
+                <p>নিজের গ্রাম তৈরি করুন এবং বিশ্বজুড়ে লড়াই করুন।</p>
+                <ul class="feature-list">
+                    <li>TH1-TH16 Base Designs</li>
+                    <li>War Attack Strategies</li>
+                </ul>
+                <a href="#" class="cta-button">View Details →</a>
+            </div>
+
+            <div class="game-card">
+                <img src="https://img.icons8.com/fluency/144/counter-strike.png" alt="CS2" class="game-thumb">
+                <span class="status-badge">Tactical Shooter</span>
+                <h3>CS2</h3>
+                <p>বিশ্বের অন্যতম জনপ্রিয় কম্পিটিটিভ শ্যুটার গেম।</p>
+                <ul class="feature-list">
+                    <li>Smoke Lineups</li>
+                    <li>Economy Management</li>
+                </ul>
+                <a href="#" class="cta-button">View Details →</a>
+            </div>
+
+            <div class="game-card">
+                <img src="https://img.icons8.com/color/144/free-fire.png" alt="Free Fire" class="game-thumb">
+                <span class="status-badge">Battle Royale</span>
+                <h3>Free Fire</h3>
+                <p>মোবাইল গেমিংয়ের জনপ্রিয় ব্যাটেল রয়্যাল গেম।</p>
+                <ul class="feature-list">
+                    <li>Fast Gloo Wall Tips</li>
+                    <li>Character Combos</li>
+                </ul>
+                <a href="#" class="cta-button">View Details →</a>
+            </div>
+
+            <div class="game-card">
+                <img src="https://img.icons8.com/color/144/minecraft-main.png" alt="Minecraft" class="game-thumb">
+                <span class="status-badge">Sandbox</span>
+                <h3>Minecraft</h3>
+                <p>সীমাহীন সৃজনশীলতা এবং বেঁচে থাকার লড়াই।</p>
+                <ul class="feature-list">
+                    <li>Survival Guides</li>
+                    <li>Redstone Engineering</li>
+                </ul>
+                <a href="#" class="cta-button">View Details →</a>
+            </div>
+
+            <div class="game-card">
+                <img src="https://img.icons8.com/color/144/grand-theft-auto-v.png" alt="GTA V" class="game-thumb">
+                <span class="status-badge">Open World</span>
+                <h3>GTA V</h3>
+                <p>বিশাল ওপেন ওয়ার্ল্ড অ্যাডভেঞ্চার গেম।</p>
+                <ul class="feature-list">
+                    <li>Heist Walkthroughs</li>
+                    <li>Money Making Guides</li>
+                </ul>
+                <a href="#" class="cta-button">View Details →</a>
+            </div>
+
+        </div>
+
+        <div class="about-box">
+            <h2>🕶️ About The Creator</h2>
+            <p>Welcome to <strong>Srabon's Game World</strong> (Powered by PlayX Nobita).</p>
+            <p>আমি <strong>মমিনul হাসান শ্রাবণ (Mominul Hasan Srabon)</strong>, শাহাজুদ্দিন স্কুলের ৯ম শ্রেণীর একজন ছাত্র।</p>
+            <p>আমি PlayX Nobita-এর প্রতিষ্ঠাতা এবং প্রধান উপদেষ্টা হিসেবে কাজ করছি।</p>
+
+            <h3>My Expertise:</h3>
+            <ul>
+                <li><strong>Pro Gaming:</strong> Valorant এবং CS2-এর মতো হাই-লেভেল গেমিং।</li>
+                <li><strong>Content Creation:</strong> আমার ইউটিউব চ্যানেল <strong>PlayX Nobita</strong>।</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>SRABON's GAME WORLD</strong>. All Rights Reserved.</p>
+        <p>Created by <span class="owner-mention">Mominul Hasan Srabon</span> | Founder of PlayX NOBITA</p>
+    </footer>
+
+</body>
+</html>
